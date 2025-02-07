@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: "work Sans";
+    margin: 0;
+    padding: 0;
+}
+html{
+    /*me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+/*MENU */
+.contenedor-header{
+    background-color: #970778;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header .logo a{
+    font-family: 'Righteous';
+    font-size: 30px;
+    color: #f8f8f8;
+    text-decoration: none;
+}
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: beige;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #02b3c0;
+}
+.nav-responsive{
+    background-color: #02b3c0;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/*SECCION I N I C I O */
+.inicio{
+    background:linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;      
+}
+
+.foto-perfil {
+    width: 150px; /* Ajusta el tamaño según necesites */
+    height: 150px; /* Debe ser igual al width para que sea un círculo perfecto */
+    border-radius: 50%; /* Convierte la imagen en un círculo */
+    object-fit: cover; /* Recorta la imagen para que encaje bien */
+    display: block;
+    margin: auto; /* Centrar la imagen */
+    border: 3px solid #fff; /* Opcional: Agregar un borde de color */
+    }
+.inicio .contenido-banner{
+    padding: 20px;
+    background: radial-gradient(circle, #393b3d 0%, #131212 100%);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio.contenido-banner img{
+    margin-top: 40px;
+    border:10px solid #1cb698;
+    width: 80%;
+    margin:auto;
+    border-radius: 40px;
+}
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family:'Righteous';
+}
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: 2s;
+}
+
+.inicio .contenido-banner .redes a:hover{
+    background-color: #970778;
+}
+.sobremi{
+    background: radial-gradient(circle, #242629 0%, #040505 100%);
+    color: #fff;
+    padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family:'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .contenido-seccion p span{
+    color: #70bbce;
+    font-weight: bold;
+}
+.sobremi .fila{
+    display: flex;
+}
+.sobremi .fila .col{
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #70bbce;
+    width: 130px;
+}
+.sobremi .fila .col ul li span{
+    background-color: #c05005;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px;
+} 
+.sobremi .fila .col .contenedor-intereses .intereses{
+    width: 100px;
+    height: 100px;
+    background-color: #970778;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses:hover{
+    background-color: #7fb3c0;
+ 
+}
+.sobremi .fila .col .contenedor-intereses .intereses i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color:#7fb3c0;
+    z-index: -1;
+    transition: .1s;
+}
+.sobremi button:hover .overlay{
+    width: 100%;
+
+}
+/*SECCION S K I L L S*/
+.skills{
+    background: linear-gradient(45deg, #1e2326, #2a2d2f, #3a3d3f, #2a2d2f, #1e2326);
+    color: #fff;
+    padding: 50px 20px;
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 48px;
+    font-family:'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px; 
+}
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #181517;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color:#70bbce;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #970778;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+/* Estas clases se agregaran dinamicamente mediante Javascript*/
+.skills .skill .Javascript{
+    width: 0%;
+    animation: 2s Javascript forwards;
+}
+@keyframes Javascript{
+    0%{width: 0%;}
+    100%{width: 10%;}
+}
+.skills .skill .Htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss{
+    0%{width: 0%;}
+    100%{width:50%;}
+}
+.skills .skill .ManejodeCRMyBasesdeDatos{
+    width: 0%;
+    animation: 2s ManejodeCRMyBasesdeDatos forwards;
+}
+@keyframes ManejodeCRMyBasesdeDatos{
+    0%{width: 0%;}
+    100%{width:85%;}
+}
+.skills .skill .AtencionalClienteyFidelización{
+    width: 0%;
+    animation: 2s AtencionalClienteyFidelización forwards;
+}
+@keyframes AtencionalClienteyFidelización{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+.skills .skill .AnálisisFinanciero{
+    width: 0%;
+    animation: 2s AnálisisFinanciero forwards;
+}
+@keyframes AnálisisFinanciero{
+    0%{width: 0%;}
+    100%{width: 88%;}
+}
+.skills .skill .TrabajoenEquipo{
+    width: 0%;
+    animation: 2s TrabajoenEquipo forwards;
+}
+@keyframes TrabajoenEquipo{
+    0%{width: 0%;}
+    100%{width: 86%;}
+}
+.skills .skill .Dedicación{
+    width: 0%;
+    animation: 2s Dedicación forwards;
+}
+@keyframes Dedicación{
+    0%{width: 0%;}
+    100%{width: 78%;}
+}
+.skills .skill .EstrategiasdeVentayNegociación{
+    width: 0%;
+    animation: 2s EstrategiasdeVentayNegociación forwards;
+}
+@keyframes EstrategiasdeVentayNegociación{
+    0%{width: 0%;}
+    100%{width: 82%;}
+}
+.skills .skill .AprendizajeenProgramación{
+    width: 0%;
+    animation: 2s AprendizajeenProgramación forwards;
+}
+@keyframes AprendizajeenProgramación{
+    0%{width: 0%;}
+    100%{width: 25%;}
+}
+.skills .skill .Creatividad{
+    width: 0%;
+    animation: 2s Creatividad forwards;
+}
+@keyframes Creatividad{
+    0%{width: 0%;}
+    100%{width: 92%;}
+}
+/*SECCION C U R R I C U L U M*/
+.curriculum{
+    background: radial-gradient(circle, #353636 0%, #040505 100%);
+    color: #fff;
+    padding: 50px 20px;
+
+}
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.curriculum h2{
+    font-size: 48px;
+    font-family:'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.curriculum .fila{
+    display: flex;
+}
+.curriculum .fila .col {
+    width: 49%;
+    padding: 0 20px;
+    background-color: #22262b; /* Color opcional para visualizar mejor */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
+.curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px; 
+}
+.curriculum .fila .izquierda{
+    border-right: 2px solid #c469b0;
+    border-left: 2px solid #c469b0;
+}
+.curriculum .fila .derecha{
+    border-left: 2px solid #c469b0;
+    border-right: 2px solid #c469b0;
+}
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #3a3939;
+    border-radius: 15px; /* Hace los bordes redondeados */
+}
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item .casa{
+    color: #02b3c0;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.curriculum .fila .item .fecha{
+    display: block;
+    color: #e26ac8;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item p{
+    line-height: 24px;
+}
+.curriculum .fila .izq{
+    margin-right: 20px;
+}
+.curriculum .fila .der{
+    margin-right: 20px;
+}
+/* SECCIÓN C O N T A C T O */
+.contacto {
+    background-image: url(istockphoto-904115216-612x612.jpg);
+    background-color: linear-gradient(45deg, #1e2326, #2a2d2f, #3a3d3f, #2a2d2f, #1e2326);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* TÍTULO */
+.contacto h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: 'Righteous';
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil en el título */
+}
+
+/* DISEÑO DE FILAS */
+.contacto .fila {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* COLUMNAS */
+.contacto .col {
+    flex: 1;
+    min-width: 100px;
+    padding: 25px;
+    background-color: #181717;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contacto .col:hover {
+    transform: translateY(-5px); /* Leve elevación en hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* FORMULARIO */
+.contacto .col input,
+.contacto .col textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ffffff; /* Borde suave blanco */
+    border-radius: 5px;
+    background-color: #3b3b3b;
+    color: #fff;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+.contacto .col input::placeholder,
+.contacto .col textarea::placeholder {
+    color: #d4acc7; /* Color del texto del placeholder en blanco */
+}
+
+.contacto .col input:focus,
+.contacto .col textarea:focus {
+    border-color: #ff4081; /* Borde de color cuando está enfocado */
+}
+
+/* BOTÓN DE ENVÍO */
+.contacto .col button {
+    background-color: #970778;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contacto .col button:hover {
+    background-color: #ff80ab; /* Cambio de color suave en hover */
+    transform: scale(1.05); /* Efecto de tamaño en hover */
+}
+
+/* IMAGEN DEL MAPA */
+.contacto .col img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para la imagen */
+    transition: transform 0.3s ease;
+}
+
+.contacto .col img:hover {
+    transform: scale(1.05); /* Efecto de zoom suave en la imagen */
+}
+
+/* INFORMACIÓN DE CONTACTO */
+.contacto .info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.contacto .info li {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+.contacto .info li:hover {
+    color: #ff80ab; /* Cambio de color en hover */
+}
+
+.contacto .info li i {
+    margin-right: 15px;
+    font-size: 22px;
+    color: #cf46a2; /* Color suave para los íconos */
+}
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: 3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #970778;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+/*SECCION RESPONSIVE*/
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #c469b0;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display:block !important;
+    }
+    nav.responsive ul li{
+        display: block !important;
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        display: block;
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}

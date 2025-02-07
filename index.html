@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="Widh=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title><Portafolio</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Nikol Velasquez</a>
+            </div>
+            <nav id="nav" class="responsive">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+
+            </nav>
+        </header>
+    </div>
+
+    <!--SECCION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div clas="contenedor-img">
+                <img src="nikol.jpg" alt="Mi foto" class="foto-perfil">
+            </div>
+            <h1>Nikol Velasquez</h1>
+            <h2>Administradora financiera</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Darian Nikol Velasquez Dimate</span> soy una persona analítica, estratégica y con visión comercial. 
+                Me apasiona la planificación financiera y la toma de decisiones que generan valor, integrando el análisis con un enfoque comercial para impulsar el crecimiento. 
+                Me destaco por mi capacidad para optimizar recursos, construir relaciones de confianza y detectar oportunidades que potencien el éxito financiero y empresarial. 
+                Siempre en búsqueda de aprendizaje, innovación y nuevas estrategias para lograr un impacto positivo.</p>
+
+                <div class="fila">
+                    <!--datos personales-->
+                    <div class="col">
+                        <h3>Datos Personales:</h3>
+                        <ul>
+                            <li>
+                                <strong>Cumpleaños:</strong>
+                                09/12/1997
+                            </li>
+                            <li>
+                                <strong>Telefono:</strong>
+                                3043458544
+                            </li>
+                            <li>
+                                <strong>Email:</strong>
+                                darian.nikol.97@gmail.com
+                            </li>
+                            <li>
+                                <strong>Dirección:</strong>
+                                Cr 29 32 10, Armenia Quindio.
+                            </li>
+                            <li>
+                                <strong>Cargo:</strong>
+                                <span>Adminisitradora financiera y comercial.</span>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!--intereses-->
+                    <div class="col">
+                        <h3>intereses:</h3>
+                        <div class="contenedor-intereses">
+                            <div class="intereses">
+                                <i class="fa-duotone fa-solid fa-book"></i>
+                                <span>LIBROS</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-duotone fa-solid fa-headphones"></i>
+                                <span>MÚSICA</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-duotone fa-solid fa-dog"></i>
+                                <span>KALA</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-duotone fa-solid fa-film"></i>
+                                <span>CINE</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-duotone fa-solid fa-plane"></i>
+                                <span>VIAJAR</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-duotone fa-solid fa-person-hiking"></i>
+                                <span>DEPORTE</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-duotone fa-solid fa-car"></i>
+                                <span>CONDUCIR</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-solid fa-house"></i>
+                                <span>FAMILIA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+
+        </div>
+    </section>
+
+    <!--SECCION SKILLS-->
+    <Section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!--Technical Skill-->
+                <div class="col">
+                    <h3>Technical Skill</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Manejo de CRM y Bases de Datos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Atención al Cliente y Fidelización</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Análisis Financiero</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>88%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Professional Skills-->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>86%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>78%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span> Estrategias de Venta y Negociación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>82%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Aprendizaje en programación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>92%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+
+    <!--SECCION CURRICULUM-->
+    <section id="curriculum" class="curriculum"> 
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Administración Financiera</h4>
+                        <span class="casa">Universidad del Quindio</span>
+                        <span class="fecha">2017 - 2025</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Secretariado Auxiliar Contable</h4>
+                        <span class="casa">Instituto Tecnico de Educación Comfenalco Quindio</span>
+                        <span class="fecha">2015 - 2017</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bachiller Tecnico en Comercio Sistematizado</h4>
+                        <span class="casa">Institución Educativa Cristobal Colón</span>
+                        <span class="fecha">2009 - 2014</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>Cajera Comercial</h4>
+                        <span class="casa">Banco Pichincha</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Gestión de transacciones bancarias (depósitos, retiros, transferencias). 
+                            Atención al cliente y resolución de consultas. 
+                            Promoción y venta de Certifica dos de Depósito a Término (CDT) y productos de libranza. 
+                            Cumplimiento de metas comerciales. Asesoramiento sobre beneficios y características de productos financieros. 
+                            Mantenimiento de registros precisos de transacciones. Realización de cierres de caja y reportes financieros. 
+                            Implementación de medidas de seguridad para prevenir fraudes.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Analísta de credito</h4>
+                        <span class="casa">Banco Finandina</span>
+                        <span class="fecha">2021 - 2023</span>
+                        <p>Examinar buró de crédito y métricas de capacidad de pago de los clientes.
+                            Analizar la información de los clientes para determinar su perfil de riesgo.
+                            Proponer decisiones de aprobación de crédito. Llenar y organizar los documentos de los clientes. 
+                            Identificar oportunamente cualquier irregularidad o la falta de cualquier documento e información. 
+                            Analizar las solicitudes de crédito y establecer si las personas son aptas para recibir créditos.
+                            Documentar procesos y políticas, así como proponer productivamente mejoras
+                            al área.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Asesora de Servicio al Cliente Digital</h4>
+                        <span class="casa">Banco BBVA</span>
+                        <span class="fecha">2020 - 2021</span>
+                        <p>Atención de servicio al clientes, manejo de protocolo de bioseguridad, 
+                            apoyo telemercadeo en ventas de tarjetas de credito, libranzas y creditos de consumo, 
+                            apoyo en el area administrativa, manejo de archivo, apoyo en el correo, 
+                            conocimiento en sistema oftimatica.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+    
+      
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+   <!--SECCION CONTACTO-->
+<section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!--Formulario-->
+                <div class="col">
+                    <input type="text" id="nombre" placeholder="Tú Nombre">
+                    <input type="text" id="telefono" placeholder="Teléfono">
+                    <input type="email" id="correo" placeholder="Dirección de correo">  
+                    <input type="text" id="tema" placeholder="Tema">
+                    <textarea id="mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                    <button id="enviar-btn">Enviar Mensaje <i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            <!--Mapa e Información-->
+            <div class="col">
+                <img src="img.jpg" alt="Mapa">
+                <div class="info">
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> Colombia, Armenia Quindío</li>
+                        <li><i class="fa-solid fa-mobile-screen-button"></i> Llamanos: 3043458544</li>
+                        <li><i class="fa-solid fa-envelope"></i> Email: darian.nikol.97@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+<footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-solid fa-rss"></i></a>
+
+    </div>
+</footer>
+
+<script src="Script.js"></script>
+
+
+</body>
+</html>
